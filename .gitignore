@@ -1,0 +1,13 @@
+# Secretos y configuración
+.env
+.env.local
+
+# Dependencias (se ignoran porque pesan mucho)
+node_modules/
+**/node_modules/
+
+# Logs y archivos temporales
+*.log
+.DS_Store
+dist/
+build/
