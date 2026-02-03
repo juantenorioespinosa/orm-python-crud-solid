@@ -6,10 +6,13 @@ Este proyecto es una implementación de un sistema **CRUD** (Create, Read, Updat
 
 El proyecto está organizado de la siguiente manera para facilitar su mantenimiento y escalabilidad:
 
-* **`setup.py`**: Configuración del motor de base de datos y creación de la sesión.
-* **`models.py`**: Definición de la clase `Producto` utilizando el sistema declarativo de SQLAlchemy.
-* **`crud.py`**: Funciones modulares que encapsulan la lógica de acceso a datos (Lectura, Inserción, Actualización y Eliminación).
+* **`setup.py`**: Configuración del motor de base de datos (Engine) y creación de la sesión de SQLAlchemy.
+* **`models.py`**: Definición de los modelos de datos (clase Producto) utilizando el sistema declarativo de SQLAlchemy.
+* **`crud.py`**: Funciones modulares que encapsulan la lógica de acceso a datos (Create, Read, Update, Delete).
 * **`main.py`**: Punto de entrada del programa que orquesta el flujo de operaciones.
+* **`.gitignore`**: Instrucciones para Git sobre qué archivos y carpetas debe ignorar (como el .env real).
+* **`requirements`**.txt: Lista de dependencias y librerías necesarias para ejecutar el proyecto.
+* **`.env.example`**: Plantilla con las variables de entorno necesarias para que otros configuren su acceso a la DB.
 * **`.env`**: Archivo (no incluido en el repositorio) para gestionar credenciales sensibles.
 
 ## 🚀 Instalación y Configuración
@@ -21,7 +24,9 @@ El proyecto está organizado de la siguiente manera para facilitar su mantenimie
 
 2. **Instalar dependencias:** Se recomienda usar un entorno virtual.
    ```bash
-   pip install sqlalchemy pymysql python-dotenv
+   python -m venv venv
+   source venv/bin/activate  # En Windows: venv\Scripts\activate
+   pip install -r requirements.txt
 
 3. **Configurar variables de entorno:** Crea un archivo llamado .env en la raíz del proyecto con el siguiente contenido:
    DB_PASSWORD=tu_contraseña_de_mysql
