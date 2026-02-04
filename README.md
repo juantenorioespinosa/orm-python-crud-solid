@@ -1,9 +1,9 @@
-![Python](https://img.shields.io)
-![SQLAlchemy](https://img.shields.io)
-![MySQL](https://img.shields.io)
-![Architecture](https://img.shields.io)
-![Patterns](https://img.shields.io)
-![CRUD](https://img.shields.io)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Architecture](https://img.shields.io/badge/Architecture-SOLID-B80672?style=for-the-badge)
+![Patterns](https://img.shields.io/badge/Design_Patterns-Repository-orange?style=for-the-badge)
+![CRUD](https://img.shields.io/badge/Operations-CRUD-green?style=for-the-badge)
 
 
 # Sistema CRUD con SQLAlchemy y MySQL
@@ -44,9 +44,13 @@ El proyecto está organizado de la siguiente manera para facilitar su mantenimie
 ## Funcionalidades Implementadas
 
 **1. Create:** Inserción masiva de productos mediante session.add_all().
+
 **2. Read:** Búsqueda global y filtrado por atributos específicos (como el título).
+
 **3. Update:** Actualización de stock y aplicación de descuentos calculados dinámicamente.
+
 **4. Delete:** Eliminación segura de registros con retorno de confirmación.
+
 **5. Robustez:** Manejo de errores con bloques try/except y uso de session.rollback() para garantizar la integridad de los datos.
 
 ## Principios SOLID Aplicados
