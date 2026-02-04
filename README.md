@@ -41,18 +41,19 @@ El proyecto está organizado de la siguiente manera para facilitar su mantenimie
 
 4. **Base de datos:** Asegúrate de tener un esquema en MySQL llamado practica_orm (o el nombre que hayas definido en setup.py).
 
-**Funcionalidades Implementadas**
-- Create: Inserción masiva de productos mediante session.add_all().
-- Read: Búsqueda global y filtrado por atributos específicos (como el título).
-- Update: Actualización de stock y aplicación de descuentos calculados dinámicamente.
-- Delete: Eliminación segura de registros con retorno de confirmación.
-- Robustez: Manejo de errores con bloques try/except y uso de session.rollback() para garantizar la integridad de los datos.
+## Funcionalidades Implementadas
 
-**Principios SOLID Aplicados**
+**1. Create:** Inserción masiva de productos mediante session.add_all().
+**2. Read:** Búsqueda global y filtrado por atributos específicos (como el título).
+**3. Update:** Actualización de stock y aplicación de descuentos calculados dinámicamente.
+**4. Delete:** Eliminación segura de registros con retorno de confirmación.
+**5. Robustez:** Manejo de errores con bloques try/except y uso de session.rollback() para garantizar la integridad de los datos.
+
+## Principios SOLID Aplicados
+
 Este proyecto implementa los principios de diseño SOLID para garantizar un código mantenible y escalable:
 
-**1. SRP (Responsabilidad Única)**
-Cada módulo tiene una misión única y clara:
+**1. SRP (Responsabilidad Única):** Cada módulo tiene una misión única y clara.
 
 models.py: Define la estructura de datos.
 
