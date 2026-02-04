@@ -27,8 +27,8 @@ El proyecto está organizado de la siguiente manera para facilitar su mantenimie
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/juantenorioespinosa/Proyecto_ORM_CRUD.git](https://github.com/juantenorioespinosa/Proyecto_ORM_CRUD.git)
-   cd Proyecto_ORM_CRUD
+   git clone [https://github.com/juantenorioespinosa/orm-python-crud-solid.git](https://github.com/juantenorioespinosa/orm-python-crud-solid.git)
+   cd orm-python-crud-solid
 
 2. **Instalar dependencias:** Se recomienda usar un entorno virtual.
    ```bash
