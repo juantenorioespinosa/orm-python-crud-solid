@@ -5,6 +5,10 @@ from setup import engine
 Base = declarative_base()
 
 class Producto(Base):
+    """
+    Representa la tabla 'productos' en la base de datos.
+    Cada instancia de esta clase corresponde a una fila de la tabla.
+    """
     __tablename__ = 'productos'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -15,6 +19,10 @@ class Producto(Base):
 
     # Representación del objeto
     def __repr__(self):
+        """
+        Define una representación legible del objeto en formato string.
+        Útil para depuración (debugging) y logs por consola.
+        """
         return f"Producto: titulo={self.titulo}, precio={self.precio}, stock={self.stock}"
 
 # Crear la tabla 'productos' en la base de datos
