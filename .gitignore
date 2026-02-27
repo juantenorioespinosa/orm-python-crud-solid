@@ -1,17 +1,22 @@
-# Secretos y configuración
+# --- SEGURIDAD ---
+# Ignorar el archivo que contiene la contraseña de MySQL
 .env
 .env.local
 
-# Dependencias (se ignoran porque pesan mucho)
-node_modules/
-**/node_modules/
-
-# Logs y archivos temporales
-*.log
-.DS_Store
-dist/
-build/
-
-# Python bytecode
+# --- PYTHON ---
+# Archivos compilados que genera Python al ejecutarse
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# --- ENTORNOS VIRTUALES ---
+# Carpeta de dependencias locales
+venv/
+ENV/
+env/
+
+# --- SISTEMA Y LOGS ---
+# Archivos temporales de Mac y Windows
+.DS_Store
+Thumbs.db
+*.log
