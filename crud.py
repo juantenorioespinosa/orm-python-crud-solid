@@ -19,7 +19,7 @@ def crear_productos(session, lista_productos):
 # 2. READ: Obtener datos
 def obtener_todos_los_productos(session):
     """
-    Devuelve una lista con todos los Productos.
+    Devuelve una lista con todos los Productos de la base de datos.
     
     Args:
         session: Instancia de la sesión de SQLAlchemy.
@@ -31,7 +31,16 @@ def obtener_todos_los_productos(session):
 
 
 def obtener_producto_por_titulo(session, titulo):
-    """Busca un producto por su columna titulo."""
+    """
+    Busca un producto específico por su columna titulo.
+    
+    Args:
+        session: Instancia de la sesión de SQLAlchemy.
+        titulo: Cadena de texto (str) con el nombre del producto a buscar.
+
+    Returns:
+        Producto: El objeto encontrado si existe, o None si no hay coincidencias.
+    """
     return session.query(Producto).filter_by(titulo=titulo).first()
 
 # 3. UPDATE: Actualizar datos
