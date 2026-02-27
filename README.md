@@ -73,8 +73,22 @@ Las funciones en crud.py están diseñadas para ser extensibles sin modificar su
 **3. DIP (Inversión de Dependencias)**
 Se utiliza la inyección de dependencias al pasar la session como argumento a las funciones de crud.py. Esto desacopla los módulos, evita importaciones circulares y permite que las funciones dependan de una abstracción (la sesión recibida) en lugar de una instancia concreta.
 
-## Próximas mejoras
-- [ ] Documentar las funciones con Docstrings.
+## Estado del Proyecto y Próximas Mejoras
+
+El proyecto ha completado su fase inicial de arquitectura y robustez. 
+
+- [x] ✅ **Documentar las funciones con Docstrings**: Todo el código está documentado siguiendo los estándares de Python.
+
+### 🤝 Contribuciones y Futuro
+¡Este proyecto está vivo y abierto a la comunidad! Tras consolidar la base técnica, invito a cualquier desarrollador a proponer mejoras. 
+
+**Ideas para futuras implementaciones:**
+* 🧪 **Pruebas Unitarias**: Implementar `pytest` para asegurar que el CRUD no se rompa al añadir cambios.
+* 🖥️ **Interfaz Gráfica (GUI)**: Crear una ventana con `Tkinter` o `CustomTkinter` para gestionar los productos visualmente.
+* 📊 **Reportes**: Generar archivos PDF o Excel con el inventario actual de productos.
+* 🔍 **Búsqueda Avanzada**: Añadir filtros por rango de precio o stock bajo.
+
+Si tienes una idea o quieres mejorar el código existente, ¡siéntete libre de abrir un **Issue** o enviar un **Pull Request**!
 
 ✒️ Autor
 Juan Tenorio - https://github.com/juantenorioespinosa
